@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "debugpy",
+            "request": "launch",
+            "name": "Launch Jupyter Notebook",
+            "program": "${workspaceFolder}/${input:notebookFile}",
+            "console": "integratedTerminal"
+        }
+    ],
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "notebookFile",
+            "description": "Enter the path to the Jupyter Notebook file"
+        }
+    ]
+}
